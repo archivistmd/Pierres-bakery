@@ -4,7 +4,7 @@ using ProjectName.Models;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class BreadTests
   {
     [TestMethod]
     public void
