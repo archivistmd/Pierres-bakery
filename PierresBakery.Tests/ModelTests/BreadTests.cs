@@ -16,11 +16,19 @@ BreadConstructor_ShouldCreateAnInstanceOfBread_Bread()
     [TestMethod]
     public void
   GetBreadCount_ReturnBreadCount_Int()
-  {
+    {
     int breadCount = 4;
     Bread breadOrder = new Bread(4);
     int result = breadOrder.BreadCount;
     Assert.AreEqual(breadCount, result);
-  }
+    }
+    [TestMethod]
+    public void
+CalculateTotal_Returns5IfOrdering1Bread_Int()
+    {
+      Bread breadOrder = new Bread(1);
+      int breatTotal = breadOrder.CalculateTotal();
+      Assert.AreEqual(5, breadTotal);
+    }
   }
 }
