@@ -24,11 +24,11 @@ BreadConstructor_ShouldCreateAnInstanceOfBread_Bread()
     }
     [TestMethod]
     public void
-CalculateTotal_Returns5IfOrdering1Bread_Int()
+CalculateTotal_Returns10IfOrdering2Bread_Int()
     {
-      Bread breadOrder = new Bread(1);
+      Bread breadOrder = new Bread(2);
       int breatTotal = breadOrder.CalculateTotal();
-      Assert.AreEqual(5, breadTotal);
+      Assert.AreEqual(10, breadTotal);
     }
   }
 }
