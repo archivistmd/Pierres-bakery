@@ -30,5 +30,21 @@ CalculateTotal_Returns10IfOrdering2Bread_Int()
       int breatTotal = breadOrder.CalculateTotal();
       Assert.AreEqual(10, breadTotal);
     }
+    
+    [TestMethod]
+    public void CalculateTotal_Returns10IfOrdering3Breads_Int()
+    {
+      Bread breadOrder = new Bread(3);
+      int breadTotal = breadOrder.CalculateTotal();
+      Assert.AreEqual(10, breadTotal);
+    }
+    
+    [TestMethod]
+    public void CalculateTotal_Returns20IfOrdering6Breads_Int()
+    {
+      Bread breadOrder = new Bread(6);
+      int breadTotal = breadOrder.CalculateTotal();
+      Assert.AreEqual(20, breadTotal);
+    }
   }
 }
